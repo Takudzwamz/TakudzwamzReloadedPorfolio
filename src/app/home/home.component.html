@@ -1,0 +1,354 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+  rel="stylesheet"
+/>
+<section>
+  <ngb-carousel
+    *ngIf="images"
+    [showNavigationArrows]="showNavigationArrows"
+    [showNavigationIndicators]="showNavigationIndicators"
+  >
+    <ng-template ngbSlide *ngFor="let image of images; index as i; index as j">
+      <div class="picsum-img-wrapper">
+        <img [src]="image" alt="Random slide" style="
+        object-fit: cover;
+        height: 650px;
+        width: 100%; 
+        border-radius: 5px;" />
+      </div>
+
+      <div
+        style="
+          background: rgba(47, 47, 46, 0.25);
+          
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          border-radius: 20px;
+          margin-top:200px;
+          border: 1px solid transparent;
+        "
+        class="carousel-caption"
+      >
+        <h1 >{{ titles[i] }}</h1>
+        <p style="margin: 5px;">{{ discription[j] }}</p>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <a
+            href="https://video-registertovotezw.live/"
+            style="
+              color: #ffffff;
+              background-color: #480470;
+              border-radius: 30px;
+              border: none;
+              margin: 10px 10px;
+              padding: 10px 10px;
+              text-align: center;
+            "
+            class="btn btn-secondary active"
+          >
+            Why Voting?🎥
+          </a>
+        </div>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+</section>
+
+<section class="welcome" data-scroll-index="0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="welcome-content text-center">
+          
+          <h1>#Register To Vote ZW</h1>
+          <h2>Why voting🤷‍♂️?</h2>
+          <p>
+            The Constitution grants all Zimbabwean citizens aged 18 and older the right to vote,
+            but the question often asked is whether voting will really make a difference.
+            
+            Of course it does! Voting gives you an opportunity to be part of decision-making that affects your life and the future
+            of our country. If you don't vote, others will make the decisions for you.
+            
+            History shows that democracies in danger of losing their freedom register frighteningly low voter turnouts. In thriving
+            democracies, people vote in large numbers and the people's voice remains supreme.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="hr-line1" />
+      </div>
+    </div>
+  </div>
+</section>
+<section id="welcome" class="services">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <button type="button" class="btn btn">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_omrk3sbt.json" background="transparent" speed="1"
+            style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+        </button>
+
+        <h5 class="text-center">Because you can!</h5>
+        <p class="text-center">
+          You may take your right to vote and all other rights in our constitution for granted, but 41 years ago most of the
+          people in our country were not allowed to vote. Many of them were arrested and jailed for demanding this most basic
+          human right. Others were tortured and killed. Because of their sacrifice, today you can vote simply by presenting
+          yourself at a voting station with your ID during a registration event that puts you on the voters' roll for life, and
+          lets you vote in every future general and by-election in your area.
+        </p>
+      </div>
+      <div class="col-md-12 text-center">
+        <button type="button" class="btn btn">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets6.lottiefiles.com/datafiles/XGThiDa8TMFKz4PQOmjgGqMzfFP2LYWX6bjHNVNm/Vote/data.json"
+            background="transparent" speed="1" style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+        </button>
+        <h5 class="text-center">Elections have consequences</h5>
+        <p class="text-center">
+          You have the power to decide on the quality of life you want for yourself and your community, and even future
+          generations. Voting is your chance to stand up for the issues you care about. This is your life: take the time to help
+          decide what's best. Voting - rather than just venting on social media or protesting – is the best way to make your voice
+          heard and make a positive input on the issues that concern you.
+        </p>
+      </div>
+      <div class="col-md-12 text-center">
+        <button type="button" class="btn btn">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_hwcplx4x.json" background="transparent" speed="1"
+            style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+        </button>
+        <h5 class="text-center">Our generation knows best</h5>
+        <p  class="text-center">
+        Technology and connectivity means that our generation is probably the best informed and equipped to vote in 
+        Zimbabwe's history. Social media and the internet is giving us access to information which previous generations of voters
+        didn't have. You are becoming the experts ahead of your parents and grandparents. Use that expertise to make sure our
+        country heads in the right direction!
+        </p>
+      </div>
+      <div class="col-md-12 text-center">
+        <button type="button" class="btn btn">
+          <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+          <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_MtN0BG.json" background="transparent" speed="1"
+            style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+        </button>
+        <h5 class="text-center">An opportunity for change</h5>
+        <p  class="text-center">
+          If you're thinking that right now you've got better things to do with your time and you'll vote next time, think again!
+          Five years is a long time to be stuck with something that you don't want or doesn't work. Just imagine what it would be
+          like to be stuck with the same cellphone for five years, especially one with limited features. Just think how many
+          cellphone upgrades you are going to get before you get the chance to upgrade your government!
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="hr-line1" />
+      </div>
+    </div>
+  </div>
+</section>
+<!--About Me -->
+<section id="welcome" class="profile" data-scroll-index="1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="head-bar"><i class="fa fa-2x fa-question"></i> Why it is important to register to vote</h3>
+        <p  class="justify-content-center">
+          An individual’s right to vote ties that person to our social order, even if that person chooses not to exercise that
+          right. Voting represents the beginning; everything else in our democracy follows the right to vote. Participation is
+          more than just a value. It is a foundational virtue of our democracy. 
+        </p>
+        <p >To make your voice heard on an issue or candidate; don’t let others decide for you. Substantive representation of youth:
+        The assumption is that voting will affect the nature of representation and ultimately the content of public policy. If
+        young people do not register to vote and participate in elections, their distinct interests are more likely to be
+        ignored or neglected by policy-makers.</p>
+        <p >Every vote does count! Remember: there is power in numbers. When we vote and get our family members to vote, we can
+        impact outcomes and change the debate. Zimbabwe is an extremely young country, with 62% of the population below the age of 25 years. Young people should vote to ensure high overall turnout.</p>
+        <p >
+          Political integration strengthens democracy; political integration of the youth promotes public oversight, public order
+          and democratic stability as long as young people are given a real voice, their vote is seen as meaningful and
+          influential.
+          
+          
+        </p>
+        <p >Don’t let others decide for you; if you don’t vote, you’re letting others decide who wins and what issues matter.
+        Today’s non-voters benefit from government and social services (like access to health care, spending on education,
+        income inequality or public safety).</p>
+        
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-12">
+          <div>
+            <img
+              style="border-radius: 5px"
+              src="assets/images/govote.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="hr-line2" />
+      </div>
+    </div>
+  </div>
+</section>
+<!--About Me -->
+<!--About Me -->
+<section id="welcome" class="profile" data-scroll-index="1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="head-bar"><i class="fa fa-2x fa-book"></i> Zimbabwe: The right to vote</h3>
+        <p class="justify-content-center">
+          The right to vote is protected by local and international laws. The local laws consist of the Constitution of Zimbabwe
+          and the Electoral Act. The international laws consist of conventions and declarations.
+        </p>
+        <div class="col-md-6 mb-3">
+          <a href="https://drive.google.com/file/d/1xVU34QqYDwAJ2BLELRsWPqBseR8LDJ9r/view?usp=sharing" style="color: #ffffff;
+                                                background-color: #480470;
+                                                border-radius: 30px;
+                                                border: none;
+                                                margin: 10px 10px;
+                                                padding: 10px 10px;
+                                                text-align: center;">Open Zimbabwe electoral Act</a>
+        </div>
+        <h5>The Constitution guarantees the right to vote in Section 23A (2) (a) where it specifies that</h5>
+        <p> <!-- Create an icon wrapped by the fa-stack class -->
+        <span class="fa-stack">
+          <!-- The icon that will wrap the number -->
+          <span style="color: #480470" class="far fa-circle fa-stack-2x"></span>
+          <!-- a strong element with the custom content, in this case a number -->
+          <strong class="fa-stack-1x">
+            1
+          </strong>
+        </span>  Subject to the provisions of this Constitution, every Zimbabwean citizen shall have the right to: </p>
+        <p><!-- Create an icon wrapped by the fa-stack class -->
+        <span class="fa-stack">
+          <!-- The icon that will wrap the number -->
+          <span style="color: #925FAF" class="far fa-circle fa-stack-2x"></span>
+          <!-- a strong element with the custom content, in this case a number -->
+          <strong class="fa-stack-1x">
+            a
+          </strong>
+        </span> Free, fair and regular elections for any legislative body, including a local authority, established under this
+        Constitution or any Act of Parliament;</p>
+        
+        <p>
+          <!-- Create an icon wrapped by the fa-stack class -->
+          <span class="fa-stack">
+            <!-- The icon that will wrap the number -->
+            <span style="color: #925FAF" class="far fa-circle fa-stack-2x"></span>
+            <!-- a strong element with the custom content, in this case a number -->
+            <strong class="fa-stack-1x">
+              b
+            </strong>
+          </span> Free, fair and regular elections to the office of President and to any other elective office;
+        </p>
+        <p><!-- Create an icon wrapped by the fa-stack class -->
+        <span class="fa-stack">
+          <!-- The icon that will wrap the number -->
+          <span style="color: #925FAF" class="far fa-circle fa-stack-2x"></span>
+          <!-- a strong element with the custom content, in this case a number -->
+          <strong class="fa-stack-1x">
+            c
+          </strong>
+        </span> Free and fair referendums whenever they are called in terms of this Constitution or an Act of Parliament.</p>
+
+        <a href="https://drive.google.com/file/d/1Wyn15KG2l0TivXYGBEAOiRJjSTEl7T8d/view?usp=sharing" 
+        style="color: #ffffff;
+                      background-color: #480470;
+                      border-radius: 30px;
+                      border: none;
+                      margin: 10px 10px;
+                      padding: 10px 10px;
+                      text-align: center;">Open constitution of Zimbabwe</a>
+
+      
+
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-12">
+          <div>
+            <img style="border-radius: 5px" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1634157230/1634157165982_myqoyf.png" width="100%" height="100%" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="hr-line2" />
+      </div>
+    </div>
+  </div>
+</section>
+<!--About Me -->
+<section id="welcome" class="profile" data-scroll-index="1">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="head-bar">
+          <i class="fa fa-2x fa-file-medical"></i> How to register? 
+          Documents required? 
+        </h3>
+        <p  class="justify-content-center"> Voter registration is continuing at all Zimbabwe Electoral Commission [ZEC] provincial and district offices during
+        normal working hours [8 am to 4.45 pm] Monday to Friday, excluding public holidays. You will need the below documents inorder to register</p>
+        
+        <p  class="justify-content-center"><i style="color: #480470;" class="fas fa-id-card"></i> National Identity Card (metal, plastic or waiting pass with holder’s picture) or
+          Valid Zimbabwean passport.
+          
+        </p>
+        <p  class="justify-content-center">
+          <i style="color: #480470;" class="fas fa-house-user"></i>
+          Proof of residence (For those who cannot produce proof of residence, an affidavit is available at the Registration).
+        </p>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <a href="/centers" style="
+                      color: #ffffff;
+                      background-color: #480470;
+                      border-radius: 30px;
+                      border: none;
+                      margin: 10px 10px;
+                      padding: 10px 10px;
+                      text-align: center;
+                    " class="btn btn-secondary active">
+            Go to Registrations centers
+          </a>
+        </div>
+        
+        
+      </div>
+      <div class="col-md-4">
+        <div class="col-md-12">
+          <div>
+            <img
+              style="border-radius: 5px"
+              src="assets/images/pic.png"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr class="hr-line2" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
